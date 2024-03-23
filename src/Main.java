@@ -13,5 +13,13 @@ public class Main {
         System.out.println("Значение переменной lion с типом long равно "+lion);
         System.out.println("Значение переменной nice с типом float равно "+nice);
         System.out.println("Значение переменной trouble с типом double равно "+trouble);
+        //Задание 2
+        float fl1 = 27.12f;
+        long ln1 = 987678965549L;
+        float fl2 = 2.786f;
+        short sh1 = 569;
+        short sh2 = -159;
+        short sh3 = 27897;
+        byte bt1 = 67;
     }
 }
