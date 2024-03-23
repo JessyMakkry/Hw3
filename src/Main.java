@@ -28,5 +28,20 @@ public class Main {
         short paper = 480;
         byte paperKids = (byte) (paper / (lpKids+asKids+eaKids));
         System.out.println("На каждого ученика рассчитано "+paperKids+" листов бумаги");
+        //Задание 4
+        byte bottler = 16;
+        byte baseTime = 2;
+        byte time = 20;
+        int bottleInTime = (bottler/baseTime) * time;
+        System.out.println("За "+time+" минут машина произвела "+bottleInTime+" штук бутылок");
+        time = 1;
+        bottleInTime = (bottler/baseTime) * time*24*60;
+        System.out.println("За "+time+" сутки машина произвела "+bottleInTime+" штук бутылок");
+        time = 3;
+        bottleInTime = (bottler/baseTime) * time*24*60;
+        System.out.println("За "+time+" дня машина произвела "+bottleInTime+" штук бутылок");
+        time = 1;
+        bottleInTime = (bottler/baseTime) * time*24*60*30;
+        System.out.println("За "+time+" месяц машина произвела "+bottleInTime+" штук бутылок");
     }
 }
