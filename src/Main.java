@@ -26,7 +26,7 @@ public class Main {
         byte asKids = 27;
         byte eaKids = 30;
         short paper = 480;
-        short paperKids = (short) (paper / (lpKids+asKids+eaKids));
+        byte paperKids = (byte) (paper / (lpKids+asKids+eaKids));
         System.out.println("На каждого ученика рассчитано "+paperKids+" листов бумаги");
     }
 }
