@@ -43,5 +43,15 @@ public class Main {
         time = 1;
         bottleInTime = (bottler/baseTime) * time*24*60*30;
         System.out.println("За "+time+" месяц машина произвела "+bottleInTime+" штук бутылок");
+        //Задание 5
+        byte allCans = 120;
+        byte whiteCansPerClass = 2;
+        byte brownCansPerClass = 4;
+        byte classes = (byte) (allCans/(whiteCansPerClass+brownCansPerClass));
+        byte whiteCans = (byte) (whiteCansPerClass * classes);
+        byte brownCans = (byte) (brownCansPerClass * classes);
+        System.out.println("В школе, где "+classes+" классов, нужно "
+                + whiteCans + " банок белой краски и " + brownCans +
+                " банок коричневой краски");
     }
 }
