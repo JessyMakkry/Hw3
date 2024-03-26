@@ -53,5 +53,15 @@ public class Main {
         System.out.println("В школе, где "+classes+" классов, нужно "
                 + whiteCans + " банок белой краски и " + brownCans +
                 " банок коричневой краски");
+        //Задание 6
+        byte banana = 80;
+        byte milk = 105;
+        byte cream = 100;
+        byte eggs = 70;
+        short mealGramms = (short) (5*banana + 2 * milk + 2*cream + 4*eggs);
+        float mealKgramns = mealGramms / 1000f;
+        System.out.println("Спортзавтрак весит "
+                + mealGramms + " грамм, или "+ mealKgramns + " килограмм");
+
     }
 }
