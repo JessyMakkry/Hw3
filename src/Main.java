@@ -71,6 +71,22 @@ public class Main {
         System.out.println("При похудении на 250 грамм в день потребуется "
                 + dayMin + " дней, а на 500 грамм - "+ dayMax + " дней");
         //Задание 8
-
+        int mariaOld = 67760;
+        int denisOld = 83690;
+        int krisOld = 76230;
+        float proc = 0.1f;
+        float mariaNew = (float) (mariaOld * (1f+proc)); //Несмотря на то, что в результате должны получиться целые числа, я выбрал float, поскольку речь идет о зарплатах.
+        float denisNew = (float) (denisOld * (1f+proc));
+        float krisNew = (float) (krisOld * (1f+proc));
+        float mariaDif = (float) (mariaNew-mariaOld);
+        float denisDif = (float) (denisNew-denisOld);
+        float krisDif = (float) (krisNew-krisOld);
+        System.out.println("Маша теперь получает "
+                + mariaNew + " рублей. Годовой доход вырос на "
+                + mariaDif + "рублей.Денис теперь получает "
+                + denisNew + " рублей. Годовой доход вырос на "
+                + denisDif + "рублей. Кристина теперь получает "
+                + krisNew + " рублей. Годовой доход вырос на "
+                + krisDif + "рублей.");
     }
 }
