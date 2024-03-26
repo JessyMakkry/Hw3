@@ -62,6 +62,15 @@ public class Main {
         float mealKgramns = mealGramms / 1000f;
         System.out.println("Спортзавтрак весит "
                 + mealGramms + " грамм, или "+ mealKgramns + " килограмм");
+        //Задание 7
+        short min = 250;
+        short max = 500;
+        short goal = 7000;
+        byte dayMin = (byte) (goal/min);
+        byte dayMax = (byte) (goal/max);
+        System.out.println("При похудении на 250 грамм в день потребуется "
+                + dayMin + " дней, а на 500 грамм - "+ dayMax + " дней");
+        //Задание 8
 
     }
 }
