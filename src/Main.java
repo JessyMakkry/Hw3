@@ -31,25 +31,25 @@ public class Main {
         //Задание 4
         byte bottler = 16;
         byte baseTime = 2;
-        byte time = 20;
-        int bottleInTime = (bottler/baseTime) * time;
-        System.out.println("За "+time+" минут машина произвела "+bottleInTime+" штук бутылок");
-        time = 1;
-        bottleInTime = (bottler/baseTime) * time*24*60;
-        System.out.println("За "+time+" сутки машина произвела "+bottleInTime+" штук бутылок");
-        time = 3;
-        bottleInTime = (bottler/baseTime) * time*24*60;
-        System.out.println("За "+time+" дня машина произвела "+bottleInTime+" штук бутылок");
-        time = 1;
-        bottleInTime = (bottler/baseTime) * time*24*60*30;
-        System.out.println("За "+time+" месяц машина произвела "+bottleInTime+" штук бутылок");
+        byte time1 = 20;
+        int bottleInTime = (bottler/baseTime) * time1;
+        System.out.println("За "+time1+" минут машина произвела "+bottleInTime+" штук бутылок");
+        byte time2 = 1;
+        bottleInTime = (bottler/baseTime) * time2*24*60;
+        System.out.println("За "+time2+" сутки машина произвела "+bottleInTime+" штук бутылок");
+        byte time3 = 3;
+        bottleInTime = (bottler/baseTime) * time3*24*60;
+        System.out.println("За "+time3+" дня машина произвела "+bottleInTime+" штук бутылок");
+        byte time4 = 1;
+        bottleInTime = (bottler/baseTime) * time4*24*60*30;
+        System.out.println("За "+time4+" месяц машина произвела "+bottleInTime+" штук бутылок");
         //Задание 5
-        byte allCans = 120;
+        short allCans = 120;
         byte whiteCansPerClass = 2;
         byte brownCansPerClass = 4;
         byte classes = (byte) (allCans/(whiteCansPerClass+brownCansPerClass));
-        byte whiteCans = (byte) (whiteCansPerClass * classes);
-        byte brownCans = (byte) (brownCansPerClass * classes);
+        short whiteCans = (short) (whiteCansPerClass * classes);
+        short brownCans = (short) (brownCansPerClass * classes);
         System.out.println("В школе, где "+classes+" классов, нужно "
                 + whiteCans + " банок белой краски и " + brownCans +
                 " банок коричневой краски");
@@ -71,22 +71,28 @@ public class Main {
         System.out.println("При похудении на 250 грамм в день потребуется "
                 + dayMin + " дней, а на 500 грамм - "+ dayMax + " дней");
         //Задание 8
-        int mariaOld = 67760;
-        int denisOld = 83690;
-        int krisOld = 76230;
+        float mariaOld = 67760f;
+        float denisOld = 83690f;
+        float krisOld = 76230f;
         float proc = 0.1f;
         float mariaNew = (float) (mariaOld * (1f+proc)); //Несмотря на то, что в результате должны получиться целые числа, я выбрал float, поскольку речь идет о зарплатах.
         float denisNew = (float) (denisOld * (1f+proc));
         float krisNew = (float) (krisOld * (1f+proc));
-        float mariaDif = (float) (mariaNew-mariaOld);
-        float denisDif = (float) (denisNew-denisOld);
-        float krisDif = (float) (krisNew-krisOld);
+        float mariaOldYear = 67760f*12f;
+        float denisOldYear = 83690f*12f;
+        float krisOldYear = 76230f*12f;
+        float mariaNewYear = (float) (mariaNew*12f);
+        float denisNewYear = (float) (denisNew*12f);
+        float krisNewYear = (float) (krisNew*12f);
+        float mariaDif = (float) (mariaNewYear-mariaOldYear);
+        float denisDif = (float) (denisNewYear-denisOldYear);
+        float krisDif = (float) (krisNewYear-krisOldYear);
         System.out.println("Маша теперь получает "
-                + mariaNew + " рублей. Годовой доход вырос на "
+                + mariaNew + " рублей в месяц. Годовой доход вырос на "
                 + mariaDif + "рублей.Денис теперь получает "
-                + denisNew + " рублей. Годовой доход вырос на "
+                + denisNew + " рублей в месяц. Годовой доход вырос на "
                 + denisDif + "рублей. Кристина теперь получает "
-                + krisNew + " рублей. Годовой доход вырос на "
+                + krisNew + " рублей в месяц. Годовой доход вырос на "
                 + krisDif + "рублей.");
     }
 }
